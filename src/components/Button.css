@@ -1,31 +1,55 @@
-.Active {
-    z-index: 1;
+@keyframes wiggle {
+    0% {
+        transform-origin: center;
+        transform: rotate(25deg);
+    }
+    50% {
+        transform-origin: center;
+        transform: rotate(-25deg);
+    }
+    100% {
+        transform-origin: center;
+        transform: rotate(25deg);
+    }
+}
 
+@keyframes roll {
+    0% {
+        transform-origin: center;
+        transform: rotate(0deg);
+    }
+    100% {
+        transform-origin: center;
+        transform: rotate(360deg);
+    }
+}
+
+.diceImage{
+    z-index: 2;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -35%) scale(25%);
-
     opacity: 85%;
+}
 
-    -moz-user-select:none; /* firefox */
+.Active {
+    animation: wiggle 1200ms infinite;
+
+    -webkit-tap-highlight-color: transparent;
+    -moz-user-select: none; /* firefox */
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE*/
     user-select: none; /* Standard syntax */
 }
 
 .Deactivated {
-    z-index: 1;
-
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -35%) scale(30%);
-
+    animation: roll 100ms infinite;
     opacity: 60%;
     filter: brightness(50%) contrast(75%);
 
-    -moz-user-select:none; /* firefox */
+    -webkit-tap-highlight-color: transparent;
+    -moz-user-select: none; /* firefox */
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE*/
     user-select: none; /* Standard syntax */

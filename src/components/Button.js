@@ -1,4 +1,5 @@
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
+
 import './Button.css';
 import icon from '../images/ai_dice_icon.png';
 
@@ -46,7 +47,7 @@ const themeList = ['Red',
     'Holiday',
     'Bitches',
     'Moms',
-    'Dads',
+    'Dad Energy',
     'Pajamas',
     'Mascots',
     'Met Gala',
@@ -65,34 +66,89 @@ const themeList = ['Red',
     'Clown',
     'Cam Girls',
     'Butches',
-    'Boots'];
+    'Boots',
+    'Pick me Bitch',
+    'Doesn’t tip',
+    'Opens eyes while kissing',
+    'Mountain Dew Baja Blast',
+    'Mountain Dew Code Red',
+    'Four Loko Connoisseur',
+    'Fucks with socks on',
+    'Fucks with shoes on',
+    'Has never eaten a vegetable',
+    'Has never eaten an animal',
+    'Has never eaten pussy',
+    'Elizabeth’s childhood',
+    'Ohio 10s',
+    'Shoes off on public transport',
+    'Facebook Poke',
+    'Casual Racists',
+    'My parents are conservatives',
+    'Has a tramp stamp',
+    'Has tribal tattoo. Is white.',
+    'Crypto Guy',
+    'Incel',
+    'Coughs like a child',
+    'Andrew Tate fan',
+    'UwU',
+    '1.5 GPA',
+    'Smol bois',
+    'Giant dicks',
+    'Directed by Quentin Tarantino',
+    'Written by a woman',
+    'A face only a mother could love',
+    'La Croix flavors',
+    'Killer bussy',
+    'Sleep Paralysis Vision',
+    'Drag Race Contestant'
+];
 
 const colorRoll = ['#F60000', '#FF8C00', '#FFEE00', '#4DE94C', '#3783FF', '#4815AA'];
+const buttonStyles = ['Deactivated','Active'];
+const cursorStyles = ['default','pointer'];
 
+function Button() {
+    let time = 50;
+    const [buttonStyle, setButtonStyle] = useState('Active');
+    const [theme, setTheme] = useState('Roll!');
+    const [rollState, setRollState] = useState(false);
+    const [cursorType, setCursor] = useState('pointer');
 
-let buttonStyle = 'Active';
+    useEffect(() => {
+        if (rollState) {
+            for (let i = 0; i < themeList.length; i++) {
+                setButtonStyle(buttonStyles[0]);
+                setTimeout(() => setTheme(themeList[Math.floor(Math.random() * themeList.length)]),
+                    time = (time + 50) + 0.01 * time);
+                if(i == themeList.length-1){
+                    setTimeout(() => {setButtonStyle(buttonStyles[1]); setCursor(cursorStyles[1])},
+                        time = (time + 50) + 0.01 * time);
+                }
+            }
 
+        }
+        setRollState(false);
+    });
 
-
-
-function Button(){
-    const [theme,setTheme] = useState('Roll!');
-
-    function RollColor() {
-
-        setTheme(themeList[Math.floor(Math.random() * themeList.length)]);
-        console.log(theme);
-        return theme;
+    function rollColor() {
+        if(buttonStyle == 'Active'){
+            setRollState(true);
+            setCursor(cursorStyles[0]);
+        }
     }
 
-    return(
-        <div >
+    return (
+        <div>
             <div className="App">
                 <h1 style={{fontSize: 48, color: `${colorRoll[Math.floor(Math.random() * colorRoll.length)]}`}}>
                     {theme}</h1>
             </div>
-            <img className={buttonStyle} src={icon} alt="icon" onClick={RollColor} style={{cursor:'pointer', boxShadow:'none'}}/>
+            <div className={'diceImage'}>
+            <img className={buttonStyle} src={icon} alt="icon" onClick={() => rollColor()}
+                 style={{cursor: cursorType}}/>
+            </div>
         </div>
     );
 }
+
 export default Button;
