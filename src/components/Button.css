@@ -1,0 +1,32 @@
+.Active {
+    z-index: 1;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%) scale(25%);
+
+    opacity: 85%;
+
+    -moz-user-select:none; /* firefox */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE*/
+    user-select: none; /* Standard syntax */
+}
+
+.Deactivated {
+    z-index: 1;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%) scale(30%);
+
+    opacity: 60%;
+    filter: brightness(50%) contrast(75%);
+
+    -moz-user-select:none; /* firefox */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE*/
+    user-select: none; /* Standard syntax */
+}
