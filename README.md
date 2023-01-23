@@ -1,6 +1,17 @@
-# Getting Started with Create React App
+# Fortnite Theme Randomizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Introducing the cutest way to spice up your Fortnite outfits!  
+
+My randomizer is here to help you come up with creative and unique theme ideas! 🌈
+
+**Deployed and ready to use at:** https://gothmommysim.github.io/fortnite-roulette-app/
+
+## Features
+- 🎲 Generates a random Fortnite theme with just a click!
+- 🚫 No installation required, simply visit the deployed link and start generating themes.
+
+## Usage
+Visit the deployed link and click the dice to roll for a new theme. Use the generated theme as inspiration for your next Fortnite outfit or match with friends!
 
 ## Available Scripts
 
