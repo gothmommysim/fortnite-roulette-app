@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/fortnite-roulette-app/static/css/main.a3246304.css",
+    "main.js": "/fortnite-roulette-app/static/js/main.04a91225.js",
+    "static/media/bg_C3S4.png": "/fortnite-roulette-app/static/media/bg_C3S4.68620b5e80d8cd64d66b.png",
+    "static/media/bg_C3S1.png": "/fortnite-roulette-app/static/media/bg_C3S1.1e7ad796b9d63572c5a2.png",
+    "static/media/bg_C2S3.png": "/fortnite-roulette-app/static/media/bg_C2S3.f366c2907fa61f700738.png",
+    "static/media/bg_C2S6.png": "/fortnite-roulette-app/static/media/bg_C2S6.c69ff429a6156e11f75b.png",
+    "static/media/bg_C2S5.png": "/fortnite-roulette-app/static/media/bg_C2S5.d8ede2cd7374aa689cd3.png",
+    "static/media/bg_C2S4.png": "/fortnite-roulette-app/static/media/bg_C2S4.af728f04fbfe2da12d9a.png",
+    "static/media/bg_C2S7.png": "/fortnite-roulette-app/static/media/bg_C2S7.15b4360936cd9dd3d694.png",
+    "static/media/bg_C4S1.png": "/fortnite-roulette-app/static/media/bg_C4S1.efb4895d07c196b73985.png",
+    "static/media/bg_C3S3.png": "/fortnite-roulette-app/static/media/bg_C3S3.ab5c96c20ef25af67ec4.png",
+    "static/media/bg_C3S2.png": "/fortnite-roulette-app/static/media/bg_C3S2.e675c75928ec816ef955.png",
+    "static/media/bg_C2S8.png": "/fortnite-roulette-app/static/media/bg_C2S8.7a788c287d52b1b2840c.png",
+    "static/media/ai_dice_icon.png": "/fortnite-roulette-app/static/media/ai_dice_icon.7c15bf38e04a11324ad2.png",
+    "static/media/fortnite.woff": "/fortnite-roulette-app/static/media/fortnite.db0e8a032073fd3b6fb6.woff",
+    "index.html": "/fortnite-roulette-app/index.html",
+    "main.a3246304.css.map": "/fortnite-roulette-app/static/css/main.a3246304.css.map",
+    "main.04a91225.js.map": "/fortnite-roulette-app/static/js/main.04a91225.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a3246304.css",
+    "static/js/main.04a91225.js"
+  ]
+}
