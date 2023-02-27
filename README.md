@@ -1,15 +1,13 @@
-# Fortnite Theme Randomizer
+# Fortnite Theme Randomizer 🎲
 
-Introducing the cutest way to spice up your Fortnite outfits!  
+Introducing the cutest way to spice up your Fortnite outfits! 🌶️
 
-My randomizer is here to help you come up with creative and unique theme ideas!
+My randomizer is here to help you come up with creative and unique theme ideas! 💭
 
 🔞 Currently includes various NSFW themes.
 
 **Deployed and ready to use at:** https://gothmommysim.github.io/fortnite-roulette-app/
 
-## Features
-🎲 Generates a random Fortnite theme.
 
 ## Usage
 Visit the deployed link and click the dice to roll for a new theme. Use the generated theme as inspiration for your next Fortnite outfit or match with friends!
