@@ -8,9 +8,25 @@ My randomizer is here to help you come up with creative and unique theme ideas! 
 
 **Deployed and ready to use at:** https://gothmommysim.github.io/fortnite-roulette-app/
 
-
 ## Usage
 Visit the deployed link and click the dice to roll for a new theme. Use the generated theme as inspiration for your next Fortnite outfit or match with friends!
+
+## Changelog
+
+### Version 2.0 (Database Integration and UI Update)
+- Added SQL database integration for theme storage and retrieval
+- Set up a Node.js server on Render.com for database queries
+- Added an NSFW filter to allow users to toggle NSFW themes on/off
+- "Add a theme" capability, including menu, which will be available once it's connected to the database
+- Updated animations and UI for a more polished look and feel
+- Made mobile more user-friendly
+- Added Cashapp for server donations
+
+### Version 1.0 (Initial Release)
+- Introduced the Fortnite Theme Randomizer
+- Users can visit the deployed link and click the dice to roll for a new theme.
+- Users can use the generated theme as inspiration for their next Fortnite outfit or match with friends.
+- Includes various NSFW themes
 
 ## Available Scripts
 
