@@ -1,0 +1,57 @@
+.includeNSFW {
+    padding: 8px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 60%);
+    outline: white solid 1px;
+    font-family: fortnite;
+    font-size: 21px;
+    text-shadow: black 1px 1px 1px;
+    color: white;
+
+    -moz-user-select:none; /* firefox */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE*/
+    user-select: none; /* Standard syntax */
+}
+
+.addTheme {
+    padding: 8px;
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.6);
+    outline: white solid 1px;
+    font-family: fortnite;
+    font-size: 24px;
+    text-shadow: black 1px 1px 1px;
+    color: white;
+
+    /* Temporarily disabled */
+    filter: grayscale(100%) brightness(50%);
+    -webkit-filter: grayscale(100%) brightness(50%);
+
+
+    -moz-user-select:none; /* firefox */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE*/
+    user-select: none; /* Standard syntax */
+}
+
+.cashApp {
+
+    padding: 8px;
+    border-radius: 100px;
+    background-color: rgba(0, 214, 50, 0.5);
+    outline: rgba(255, 255, 255, 0.5) solid 1px;
+    font-family: fortnite;
+    font-size: 24px;
+    text-shadow: black 1px 1px 1px;
+    color: white;
+
+    -moz-user-select:none; /* firefox */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE*/
+    user-select: none; /* Standard syntax */
+}
+
+.cashApp:hover{
+    filter: drop-shadow(0 0 0px rgba(255, 255, 255, 0.5));
+}

@@ -2,14 +2,28 @@
     0% {
         transform-origin: center;
         transform: rotate(25deg);
+        filter: drop-shadow(0px 0px 8px rgba(255,140,0,1));
+        -webkit-filter: drop-shadow(0px 0px 8px rgba(255,140,0,1));
+    }
+    25%{
+        filter: drop-shadow(0px 0px 32px rgba(255,238,0,1));
+        -webkit-filter: drop-shadow(0px 0px 32px rgba(255,238,0,1));
     }
     50% {
         transform-origin: center;
         transform: rotate(-25deg);
+        filter: drop-shadow(0px 0px 16px rgba(77,233,76,1));
+        -webkit-filter: drop-shadow(0px 0px 16px rgba(77,233,76,1));
+    }
+    75%{
+        filter: drop-shadow(0px 0px 16px rgba(55,131,255,1));
+        -webkit-filter: drop-shadow(0px 0px 16px rgba(55,131,255,1));
     }
     100% {
         transform-origin: center;
         transform: rotate(25deg);
+        filter: drop-shadow(0px 0px 8px rgba(72,21,170,1));
+        -webkit-filter: drop-shadow(0px 0px 8px rgba(72,21,170,1));
     }
 }
 
@@ -24,9 +38,19 @@
     }
 }
 
+@keyframes breathing {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
 .diceImage{
     z-index: 2;
     position: fixed;
+    display: flex;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -35%) scale(25%);
@@ -34,7 +58,8 @@
 }
 
 .Active {
-    animation: wiggle 1200ms infinite;
+    animation: wiggle 2400ms infinite;
+    position: relative;
 
     -webkit-tap-highlight-color: transparent;
     -moz-user-select: none; /* firefox */

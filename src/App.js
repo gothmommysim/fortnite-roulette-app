@@ -12,7 +12,8 @@ import bg_C3S2 from './images/bg/bg_C3S2.png';
 import bg_C3S4 from './images/bg/bg_C3S4.png';
 import bg_C4S1 from './images/bg/bg_C4S1.png';
 
-import Button from "./components/Button";
+import React, {useState} from "react";
+import ComponentParent from "./components/ComponentParent";
 
 const bg = [
     bg_C2S3,
@@ -36,21 +37,19 @@ function App() {
                 backgroundImage: `url(${bg[Math.floor(Math.random() * bg.length)]})`,
             }}>
             </div>
-            <header className={'App-header'}>FORTNITE THEME RANDOMIZER <br/>
+            <header className={'App-header'}>FORTNITE THEME RANDOMIZER
+                <a className="App-special" style={{fontSize: 24}}> v2</a> <br/>
                 <span style={{fontSize: 32}}>by <a href={'https://github.com/gothmommysim'}
                                                    style={{textDecoration: 'none', color: "inherit"}}>
                         Sim❤️</a>
                 </span>
             </header>
-
-            <Button/>
+            <ComponentParent/>
             <footer className={'App-footer'}>
                 <span style={{fontSize: 32}}>2023</span>
             </footer>
         </div>
-
-
     );
 }
 
-export default App;
+export default React.memo(App);
