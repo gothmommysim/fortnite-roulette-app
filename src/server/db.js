@@ -1,4 +1,4 @@
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 const mysql = require('mysql');
 const express = require('express');
 const cors = require('cors');
@@ -42,6 +42,6 @@ app.get('/themes', (req,res) =>{
         });
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log("db access");
 });

@@ -29,7 +29,7 @@ function RollButton({isNSFW, setThemeListCreated, themeListCreated}) {
                 .catch((err) => console.error(err));
             setThemeListCreated(true);
         }
-    }, [isNSFW, themeListCreated]);
+    }, [isNSFW, themeListCreated, setThemeListCreated]);
 
     useEffect(() => {
         if (rollState && themeListCreated) {
