@@ -14,12 +14,15 @@ function RollButton({isNSFW, setThemeListCreated, themeListCreated}) {
     const [rollState, setRollState] = useState(false);
     const [cursorType, setCursor] = useState('pointer');
     const [themeList, setThemeList] = useState([]);
+    const headers = {
+        'Access-Control-Allow-Origin': '*',
+    };
 
     useEffect(() => {
         if(!themeListCreated) {
             // Fetch themes from the database
-            let url = `/themes?isNSFW=${isNSFW}`;
-            fetch(url)
+            let url = `https://fortnite-roulette-app.onrender.com/themes?isNSFW=${isNSFW}`;
+            fetch(url,{headers})
                 .then((res) => res.json())
                 .then((data) => {
                     setThemeList(data);
