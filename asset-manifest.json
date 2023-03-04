@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fortnite-roulette-app/static/css/main.17f28fb5.css",
-    "main.js": "/fortnite-roulette-app/static/js/main.6dcdf473.js",
+    "main.css": "/fortnite-roulette-app/static/css/main.2e772d3f.css",
+    "main.js": "/fortnite-roulette-app/static/js/main.b550d737.js",
     "static/media/bg_C3S4.png": "/fortnite-roulette-app/static/media/bg_C3S4.68620b5e80d8cd64d66b.png",
     "static/media/bg_C3S1.png": "/fortnite-roulette-app/static/media/bg_C3S1.1e7ad796b9d63572c5a2.png",
     "static/media/bg_C2S3.png": "/fortnite-roulette-app/static/media/bg_C2S3.f366c2907fa61f700738.png",
@@ -16,11 +16,11 @@
     "static/media/ai_dice_icon.png": "/fortnite-roulette-app/static/media/ai_dice_icon.7c15bf38e04a11324ad2.png",
     "static/media/fortnite.woff": "/fortnite-roulette-app/static/media/fortnite.db0e8a032073fd3b6fb6.woff",
     "index.html": "/fortnite-roulette-app/index.html",
-    "main.17f28fb5.css.map": "/fortnite-roulette-app/static/css/main.17f28fb5.css.map",
-    "main.6dcdf473.js.map": "/fortnite-roulette-app/static/js/main.6dcdf473.js.map"
+    "main.2e772d3f.css.map": "/fortnite-roulette-app/static/css/main.2e772d3f.css.map",
+    "main.b550d737.js.map": "/fortnite-roulette-app/static/js/main.b550d737.js.map"
   },
   "entrypoints": [
-    "static/css/main.17f28fb5.css",
-    "static/js/main.6dcdf473.js"
+    "static/css/main.2e772d3f.css",
+    "static/js/main.b550d737.js"
   ]
 }
