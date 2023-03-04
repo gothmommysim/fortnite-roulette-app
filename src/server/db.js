@@ -4,7 +4,9 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: 'https://gothmommysim.github.io'
+}));
 
 const db = mysql.createConnection({
     host: "us-east.connect.psdb.cloud",
@@ -38,6 +40,9 @@ app.get('/themes', (req,res) =>{
             if (err) throw err;
             console.log(sqlSelectAll + sqlHasNSFW);
             console.log(isNSFW+'\n');
+            res.set('Access-Control-Allow-Origin', '*');
+            res.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+            res.set('Access-Control-Allow-Headers', 'Content-Type');
             res.send(result);
         });
 });
