@@ -13,6 +13,9 @@ Visit the deployed link and click the dice to roll for a new theme. Use the gene
 
 ## Changelog
 
+#### Version 2.0.1
+- Added warning for server slowdown on app launch
+
 ### Version 2.0 (Database Integration and UI Update)
 - Added SQL database integration for theme storage and retrieval
 - Set up a Node.js server on Render.com for database queries
