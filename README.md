@@ -6,6 +6,8 @@ My randomizer is here to help you come up with creative and unique theme ideas! 
 
 🔞 Currently includes various NSFW themes.
 
+***JLYK: The free database for this project is often slow or offline which can cause the app to not work as designed.***
+
 **Deployed and ready to use at:** https://gothmommysim.github.io/fortnite-roulette-app/
 
 ## Usage
